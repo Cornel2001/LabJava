@@ -1,4 +1,4 @@
-package Interfata;
+package GUI;
 
 public class Car {
 	
