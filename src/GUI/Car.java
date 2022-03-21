@@ -1,15 +1,20 @@
 package GUI;
 
-public class Car {
+import java.io.Serializable;
+
+public class Car implements Serializable{
 	
 	private int vitezaMax;
 	private float rataConsumCombustibil;
 	private float timpViataRoti;
 	private float vitezaDeAcceleratie;
 	
-	public Car()
+	public Car(int vitezaMax, float rataConsumCombustibil, float timpViataRoti,float vitezaDeAcceleratie )
 	{
-		
+		this.vitezaMax = vitezaMax;
+		this.rataConsumCombustibil = rataConsumCombustibil;
+		this.timpViataRoti =timpViataRoti;
+		this.vitezaDeAcceleratie =vitezaDeAcceleratie;
 	}
 	
 	public int getVitexaMax()
@@ -52,5 +57,14 @@ public class Car {
 		this.vitezaDeAcceleratie = vitezaDeAcceleratie;
 	}
 	
-
+	public String toString() {
+		
+		
+		return "Masina are urmatoarele caracteristici:" + vitezaMax +"," + rataConsumCombustibil+"," + timpViataRoti + "," + vitezaDeAcceleratie + ".";
+		
+	}
+	
 }
+	
+
+

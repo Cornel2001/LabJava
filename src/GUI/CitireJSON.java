@@ -27,7 +27,7 @@ public class CitireJSON {
 		masini = new Car[i];
 	}
 	
-    public void  citire_agenda(){
+    public void  citire_masina(){
     	{
     		Gson gson = new Gson();
     		
@@ -48,10 +48,6 @@ public class CitireJSON {
     		catch (IOException e1) 
     		{
     			e1.printStackTrace();
-    		} catch (JMException e) {
-    			e.printStackTrace();
-    		} catch (JMRuntimeException e) {
-    			e.printStackTrace();
     		}
     		
     	}
