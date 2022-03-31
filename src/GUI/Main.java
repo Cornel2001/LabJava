@@ -6,6 +6,8 @@ public class Main {
 		ReadWriteObject rwo = new ReadWriteObject();
 		rwo.ReadWrite();
 		Window w = new Window();
+		PISTAsingletonClass pst =  PISTAsingletonClass.getInstance();
+
 		
 	}
 
