@@ -1,56 +1,49 @@
 package GUI;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Dimension;
-import java.awt.Graphics;
 
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
+
 import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
+
+import java.awt.Dimension;
+
+import javax.swing.JButton;
 
 
 
-public class Window  
+public class Window 
 {
-	private JFrame frame; 
+	private JFrame frame; //  compunere
+	private JButton btn1;
+	private JButton btn2;
 	
-	 
 	public Window()
 	{
 		super();
-		frame = new JFrame("Formula1 Racing Day!");
+		frame = new JFrame("Prima aplicatie grafica");
 		initGUI();
-		
-		JButton btn = new JButton("Bine a-ti venit la cursa!!! ");// sa nu uit sa fac un drapel.
-		btn.setBounds(10, 10, 200, 40);
-		frame.add(btn);	
-		
-		JButton btn1 = new JButton("Bine!!! ");
-		btn.setBounds(10, 10, 200, 40);
-		frame.add(btn1);	
-		
 	}
 	
 	private void initGUI()
 	{
-		frame.setSize(new Dimension(500, 500));
+		frame.setSize(new Dimension(400, 400));
 		frame.setVisible(true);
-		frame.setDefaultCloseOperation(3);
 		frame.setLayout(null);
 		
+		btn1 = new JButton("Apasa1");
+		btn2 = new JButton("Apasa2");
 		
+		//btn1.setSize(100, 20);
+		//btn2.setSize(100, 20);
+		
+		btn1.setBounds(10, 20, 100, 20);
+		btn2.setBounds(60, 60, 100, 20);
+		
+		frame.add(btn1);
+		frame.add(btn2);
 	}
 	
 	
-	
-	
-	
-	
-	
-}
 
+}
 
 
